@@ -277,6 +277,9 @@ document.getElementById('modal-btn').addEventListener('click', function(){
     getToDefault('total-dash');
     const couponInput = document.getElementById('coupon-input');
     couponInput.value = '';
-    const cart = document.getElementById('selected-card-container')
+    const cart = document.getElementById('selected-card-container');
     cart.innerText = '';
+    const purchaseButton = document.getElementById('purchase-btn');
+    purchaseButton.setAttribute("disabled", "disabled");
+    purchaseButton.classList.add('bg-gray-300');
 })
